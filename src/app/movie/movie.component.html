@@ -1,0 +1,10 @@
+<div class="col-md-4 offset-4 mt-2 mb-2">
+    <input class="form-control" style="width: 500px;" name="search" id="search" [(ngModel)]="search"
+        type="text" (keyup)="getMovie()" placeholder="Search Movie">
+
+</div>
+
+<div class="card card-body" *ngFor="let mov of movie">
+    <h6>{{mov.Title}}</h6>
+    <img src="{{mov.Poster}}" style="height:250px; width:300px;" alt="">
+</div>

@@ -1,0 +1,35 @@
+<div class="col-md-4 offset-4 mt-5 mb-5 card card-body">
+    <form action="" [formGroup]="form" (ngSubmit)="addMovie(form)">
+        <div class="form-group">
+            <h1 class="text-center text-white bg-warning">Add Movie</h1>
+            <input type="text" name="movie" id="movie" class="form-control" placeholder="Enter Movie"
+                formControlName="movie">
+            <div *ngIf="movie.touched && movie.invalid">
+                <p *ngIf="movie.errors.required" class="alert-danger">* this Field is required </p>
+            </div>
+        </div>
+        <div class="form-group">
+            <input type="text" name="moviet" id="moviet" class="form-control" placeholder="Enter Movie Title"
+                formControlName="moviet">
+            <div *ngIf="moviet.touched && moviet.invalid">
+                <p *ngIf="moviet.errors.required" class="alert-danger">* this Field is required </p>
+            </div>
+        </div>
+        <div class="form-group">
+            <input type="url" name="movieu" id="movieu" class="form-control" placeholder="Enter Movie URL"
+                formControlName="movieu">
+            <div *ngIf="movieu.touched && movieu.invalid">
+                <p *ngIf="movieu.errors.required" class="alert-danger">* this Field is required </p>
+            </div>
+        </div>
+        <div class="form-group">
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                placeholder="Description"></textarea>
+        </div>
+
+        <div class="form-group">
+            <button type="submit" class="btn btn-outline-success float-right" [disabled]="form.invalid">Add
+                Movie</button>
+        </div>
+    </form>
+</div>
