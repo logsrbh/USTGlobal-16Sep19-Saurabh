@@ -1,0 +1,21 @@
+package com.ustglobal.jpawithhibernate.onetoone;
+
+import lombok.Data;
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Data
+@Entity
+@Table(name="person")
+public class Person {
+	
+	
+	private int id;
+	
+	private String name;
+	
+	private VoterCard card;
+
+	
+
+}

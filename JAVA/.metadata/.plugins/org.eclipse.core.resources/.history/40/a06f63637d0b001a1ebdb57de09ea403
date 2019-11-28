@@ -1,0 +1,21 @@
+package com.ustglobal.jpawithhibernate;
+
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
+
+import com.ustglobal.jpawithhibernate.dto.Product;
+
+public class InsertDemo {
+
+	
+	public static void main(String[] args) {
+		
+		Product product = new Product();
+		product.setPid(101);
+		product.setPname("Pen");
+		product.setQuantity(10);
+		
+		EntityManagerFactory enitEntityManagerFactory = Persistence.createEntityManagerFactory("TestPersistence");
+		
+	}
+}

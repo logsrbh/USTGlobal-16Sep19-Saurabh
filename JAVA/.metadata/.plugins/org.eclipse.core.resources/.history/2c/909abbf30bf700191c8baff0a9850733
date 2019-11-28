@@ -1,0 +1,24 @@
+package com.ustglobal.beanobject.bean;
+
+public class Student {
+
+	private int id;
+	private String name;
+	private int rollNo;
+	
+	public void setId() {
+		this.id=id;
+	}
+	public void setName() {
+		this.name=name;
+						
+	}
+	public String geName() {
+		return name;
+		
+	}
+	public void setRollNo() {
+		this.rollNo=rollNo;
+	}
+}
+

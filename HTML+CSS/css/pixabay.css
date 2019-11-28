@@ -1,0 +1,145 @@
+body{
+    margin: 0;
+    padding: 0;
+    margin-top: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a{
+    color: #fff;
+    text-decoration: none;
+}
+
+header{
+    
+    margin-top:0;
+    width: 100%;
+    min-height: 400px;
+    background-image: url(/HTML+CSS/image/carlos-aguilar-4gb2JqGAoCY-unsplash.jpg);
+    margin: auto;
+    background-size:cover;
+    background-repeat: no-repeat;
+    
+}
+h2{
+    padding: 20px;
+    color: #fff;
+    margin: 0;
+    float: left;
+    font-family: cursive;
+}
+img{
+    width: 250px;
+    height: 250px;
+    border: 1px solid black;
+    padding: 20px;
+    border-radius:10px;
+    margin-left: 10px;
+    margin-top: 10px;
+    box-shadow: 0 0 10px blueviolet; 
+}
+img:hover{
+    transform: scale(1.1,1.1);
+    transition: all 2s;
+    
+}
+#section{
+    padding-top:100px; 
+    text-align: center;
+    color: white;
+
+
+}
+input{
+    background-image: url('/HTML+CSS/image/magnifier.png'); 
+    background-repeat: no-repeat;
+    background-position: 20px;
+    border-radius:10px; 
+    width:800px;
+    height: 50px;
+    text-align: center;
+    outline: none;
+
+}
+li{
+    float: left;
+    padding: 10px;
+    color: whitesmoke;
+    
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding-top: 17px;
+    float: right;
+}
+#bod{
+    height: 100px;
+    text-align: center;
+}
+
+
+button{
+    padding: 5px 15px 5px 15px;
+    background-color: transparent;
+    border: 2px solid white;
+    color: #fff;
+    
+
+
+}
+#btn{
+    height: 50px;
+    width: 250px;
+    background-color: blueviolet;
+    border-radius: 10px;
+    outline: none;
+    
+
+}
+#btn:hover{
+    transform: scale(1.1,1.1);
+    transition: all 2s;
+
+}
+#bod{
+    widows: 800px;
+    text-align: center;
+    margin:auto;
+}
+
+footer{
+    background-color: gray;
+    height: 50px;
+    border-top: 2px solid blueviolet; 
+}
+p{
+    text-align: center;
+    margin-left :100px ;
+    margin-right:100px; 
+    margin-top: -15px;
+    font-family: cursive;
+}
+#imagees{
+    margin-top: 100px;
+    height: 100px;
+    width: auto;
+    text-align: center;
+}
+#gp{
+    width:100px;
+    height: 25px;
+    
+    
+}
+#as{
+    width:100px;
+    height: 25px;
+}
+footer{
+    padding-top:20px; 
+    text-align: center;
+    margin-top: 100px;
+    background-color: blueviolet;
+    color: white;
+}

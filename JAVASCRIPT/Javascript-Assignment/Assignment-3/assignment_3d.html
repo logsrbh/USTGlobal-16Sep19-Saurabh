@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Assignment-3c</title>
+</head>
+
+<body>
+    <script>
+        //<---------------------Number is Prime Using Named Function---------------------> 
+        function isPrime(num) {
+                if (num === 0 || num === 1) {
+                    return false;
+                }
+                else if (num === 2) {
+                    return true;
+                }
+                else {
+                    for (var i = 2; i <= num / 2; ++i) {
+                        if (num % i == 0) {
+                            return false;
+                        }
+                        else {
+                            return true;
+                        }
+                    }
+                }
+            }
+            console.log(isPrime(2));
+
+        //<---------------------Number is Prime Using  Function Expression--------------------->
+
+        var isPrime = function (num) {
+                if (num === 0 || num === 1) {
+                    return false;
+                }
+                else if (num === 2) {
+                    return true;
+                }
+                else {
+                    for (var i = 2; i <= num / 2; ++i) {
+                        if (num % i == 0) {
+                            return false;
+                        }
+                        else {
+                            return true;
+                        }
+                    }
+                }
+            }
+            var check = isPrime(7);
+            console.log(check);
+
+        //<---------------------Number is Prime Using Self Invoked Function--------------------->    
+        (function (num) {
+                if (num === 0 || num === 1) {
+                    console.log("Not Prime");
+                }
+                else if (num === 2) {
+                    console.log("Prime")
+                }
+                else {
+                    for (var i = 2; i <= num / 2; ++i) {
+                        if (num % i == 0) {
+                            console.log("Not Prime")
+                        }
+                        else {
+                            console.log("Prime")
+                        }
+                    }
+                }
+            })(15)
+
+    </script>
+</body>
+
+</html>

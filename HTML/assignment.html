@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Assignment</title>
+</head>
+
+<body>
+
+    <caption> <i>A test table with merged cell</i> </caption>
+    <table border="1" style="border-collapse:collapse">
+        <tr>
+            <th rowspan="2"></th>
+            <th colspan="2">Average</th>
+            <th rowspan="2">Red <br> eyes</th>
+        </tr>
+        <tr>
+            <th>height</th>
+            <th>weight</th>
+
+        </tr>
+        <tr>
+            <th>Males</th>
+            <td>1.9</td>
+            <td>0.003</td>
+            <td>40%</td>
+        </tr>
+
+        <tr>
+            <th>Females</th>
+            <td>1.7</td>
+            <td>0.002</td>
+            <td>43%</td>
+        </tr>
+
+    </table>
+    <br>
+    <br>
+
+    <table border="1" style=border-collapse:collapse>
+        <tr>
+            <th colspan="6">Time Table</th>
+        </tr>
+        <tr>
+            <td rowspan="6">Hours</td>
+            <td>Mon</td>
+            <td>Tue</td>
+            <td>Wed</td>
+            <td>Thu</td>
+            <td>Fri</td>
+        </tr>
+
+        <tr>
+            <td>Science</td>
+            <td>Maths</td>
+            <td>Science</td>
+            <td>Maths</td>
+            <td>Art</td>
+
+        </tr>
+        <tr>
+            <td>Social</td>
+            <td>History</td>
+            <td>English</td>
+            <td>Social</td>
+            <td>Sports</td>
+
+        </tr>
+        <tr>
+            <th colspan="5">Lunch</th>
+        </tr>
+        <tr>
+            <td>Science</td>
+            <td>Maths</td>
+            <td>Science</td>
+            <td>Maths</td>
+            <td rowspan="2">Project</td>
+
+
+        </tr>
+        <tr>
+            <td>Social</td>
+            <td>History</td>
+            <td>English</td>
+            <td>Social</td>
+
+
+        </tr>
+
+    </table>
+    <br> <br> <br>
+    <table border="1">
+        <tr>
+            <td colspan="4">Home Team </td>
+            <td colspan="4">Away Team</td>
+        </tr>
+        <tr>
+            <td colspan="3">Arssenal</td>
+            <td>2</td>
+            <td colspan="3">Leeds</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td colspan="3">Dervy</td>
+            <td>1</td>
+            <td colspan="3">Everton</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td colspan="3">Liverpool </td>
+            <td>0</td>
+            <td colspan="3">Sunderland</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td colspan="3">NewCastle</td>
+            <td>1</td>
+            <td colspan="3">Man Utd</td>
+            <td>4</td>
+        </tr>
+
+    </table>
+    <br> <br> <br>
+
+    <form>
+        <fieldset>
+            <label for="fname">First Name</label> <br>
+            <input type="text" name="name" id="name"><br>
+            <label for="lname">Last Name</label><br>
+            <input type="text" name="name" id="name"><br>
+            <label for="cname">Company Name</label><br>
+            <input type="text" name="cname" id="cname"><br>
+            <label for="eid"> Emp ID</label><br>
+            <input type="number" name="eid" id="eid"> <br>
+            <label for="doj">Date of Joining</label> <br>
+            <input type="date" name="doj" id="doj"><br>
+            <label for="gender">Gender</label><br>
+            <input type="radio" name="gen">Male
+            <input type="radio" name="gen">Female
+            <input type="radio" name="gen">Others <br>
+            <label for="skill">Skills</label><br>
+            <input type="checkbox" name="check">
+            <label for="check">Java</label> <br>
+            <input type="checkbox" name="check">
+            <label for="check">Sql</label> <br>
+            <input type="checkbox" name="check">
+            <label for="check">J2EE</label> <br>
+            <input type="checkbox" name="check">
+            <label for="check">Hibernate</label> <br>
+            <input type="submit" name="submit" id="submit">
+            <input type="reset" name="reset" id="reset">
+
+        </fieldset>
+
+
+
+    </form>
+    <br><br><br>
+
+    <form>
+
+        <label for="head">
+            <h1>Customer Details</h1>
+        </label>
+        <hr>
+        <label for="name"><b>Full Name</b> </label><br>
+
+        <td><input type="text" name="name" id="name" placeholder="First Name">
+        <td><input type="text" name="name" id="name" placeholder="Last Name"><br><br>
+            <label for="add"><b>Address</b></label><br>
+            <input type="text" name="add" id="add" placeholder="Street Address"><br><br>
+
+            <input type="text" name="add" id="add" placeholder="Street Address Line 2"><br><br>
+            <input type="text" name="city" id="city" placeholder="city">
+            <input type="text" name="state" id="state" placeholder="State/Province"><br><br>
+            <input type="number" name="pin" id="pin">
+            <select name="country" id="country">
+                <option value="A">Country</option>
+            </select>
+
+
+
+    </form>
+
+    <h5>C)</h5>
+
+    <form action="">
+        <label for="">Full Name</label>
+        <input type="text" name="fname" id="fname" placeholder="First Name">
+        <input type="text" name="mname" id="mname" placeholder="Middle Name">
+        <input type="text" name="lname" id="lname" placeholder="Last Name"><br><br>
+        <label for="">Current Address</label>
+        <input type="text" name="stadd" id="atdd" placeholder="Street Address"><br><br>
+        <input type="text" name="atadd2" id="stadd2" placeholder="Street Address 2""><br><br>
+        <input type=" text" name="city" id="city" placeholder="City">
+        <input type="text" name="state" id="state" placeholder="State/Province"><br><br>
+        <input type="number" name="zip" id="zip" placeholder="Pincode">
+        <select name="country" id="country">
+            <option value="A">Please Select</option>
+        </select><br><br>
+        <label for="email">Email Adresss</label>
+        <input type="email" name="email" id="email"><br><br>
+        <label for="phone">Phone Number</label>
+        <input type="tel" name="phone" id="phone"><br><br>
+        <!-- <input type="month" placeholder="Month">
+        <input type="date" placeholder="Date">
+        <input type="number" placeholder="year"> -->
+        <select name="day" id="Day">
+            <option value="Day">Day </option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+        </select>
+        <select name="month" id="month">
+            <option value="month">Month</option>
+            <option value="Jan">1</option>
+            <option value="Feb">2</option>
+            <option value="Mar"></option>
+        </select>
+        <select name="year" id="year">
+            <option value="Year">Year</option>
+            <option value="1995">1</option>
+            <option value="1996">2</option>
+            <option value="1999"></option>
+        </select><br><br><br>
+
+        <button>Next</button>
+
+
+
+
+
+    </form>
+
+
+
+</body>
+
+</html>

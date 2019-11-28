@@ -1,0 +1,17 @@
+package com.ustglobal.jpawithhibernate.jpql;
+
+import com.ustglobal.jpawithhibernate.dto.Product;
+
+public class JpqlDynamicInsertDemo {
+	
+	public static void main(String[] args) {
+		
+		Product product = new Product();
+		product.setPid(101);
+		product.setPname("Pen");
+		product.setQuantity(10);
+		
+		
+	}
+
+}

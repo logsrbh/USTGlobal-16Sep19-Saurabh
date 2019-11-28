@@ -1,0 +1,13 @@
+package com.ustglobal.jpawithhibernate.manytomany;
+
+public class Student {
+
+	
+	private  int id;
+
+	private String name;
+	
+	
+	
+	
+}

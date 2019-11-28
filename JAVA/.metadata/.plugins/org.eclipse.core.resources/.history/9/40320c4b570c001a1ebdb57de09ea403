@@ -1,0 +1,20 @@
+package com.ustglobal.jpawithhibernate.onetoone;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@data
+@Entity
+@Table(name="person")
+public class Person {
+	
+	
+	private int id;
+	
+	private String name;
+	
+	private VoterCard card;
+
+	
+
+}

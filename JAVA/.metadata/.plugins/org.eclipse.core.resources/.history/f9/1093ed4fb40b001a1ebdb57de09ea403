@@ -1,0 +1,35 @@
+package com.ustglobal.jpapractise;
+
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
+
+import com.ustglobal.jpapractise.dto.Student;
+
+public class InsertDemo {
+
+	
+	public static void main(String[] args) {
+		
+		
+		
+		Student student = new Student();
+		student.setId(10);
+		student.setName("Dinga");
+		student.setAge(25);
+		
+		
+		
+		EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("TestPersistence")
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+	
+	
+}

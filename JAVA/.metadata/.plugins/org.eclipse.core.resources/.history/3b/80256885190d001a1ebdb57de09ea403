@@ -1,0 +1,61 @@
+package com.ustglobal.jpawithhibernate.manytomany;
+
+import java.util.ArrayList;
+
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.EntityTransaction;
+import javax.persistence.Persistence;
+
+public class TestManyToMany {
+	
+	public static void main(String[] args) {
+		
+		Course course1 = new Course();
+		course1.setCid(10);
+		course1.setCname("Java");
+		
+		Course course2 = new Course();
+		course2.setCid(11);
+		course2.setCname("SQL");
+		
+		Course course3 = new Course();
+		course3.setCid(12);
+		course3.setCname("Servlet");
+		
+		
+		ArrayList<Course> courses = new ArrayList<Course>();
+		courses.add(course1);
+		courses.add(course2);
+		courses.add(course3);
+		
+		
+		
+		Student student1 = new Student();
+		student1.setId(101);
+		student1.setName("Rama");
+		student1.setCourse(courses);
+		
+		
+		
+		
+		
+		EntityTransaction entityTransaction =null;
+		EntityManager entityManager =null ;
+		try {
+			EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("TestPersistence");
+			entityManager = entityManagerFactory.createEntityManager();
+			entityTransaction = entityManager.getTransaction();
+			entityTransaction.begin();
+			System.out.println("Record Saved");
+			entityTransaction.commit();
+		} catch (Exception e) {
+			e.printStackTrace();
+			entityTransaction.rollback();
+
+		}
+		entityManager.close();
+		
+	}// end of main
+
+}// end of class

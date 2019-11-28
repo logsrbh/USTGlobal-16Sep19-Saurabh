@@ -1,0 +1,19 @@
+package com.ustglobal.didemo;
+
+import com.ustglobal.didemo.dao.I;
+import com.ustglobal.didemo.impl.A;
+
+public class MainClass {
+	
+	public static void main(String[] args) {
+		
+		I i = new A();
+		
+		i.m1();
+		i.m2();
+		i.m3();
+		
+		
+	}
+
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;com.ustglobal.didemo.dto&apos; to &apos;com.ustglobal.didemo.impl&apos;&#x0D;&#x0A;- Original project: &apos;DiDemo&apos;&#x0D;&#x0A;- Original element: &apos;DiDemo/src/com.ustglobal.didemo.dto&apos;&#x0D;&#x0A;- Renamed element: &apos;DiDemo/src/com.ustglobal.didemo.impl&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;com.ustglobal.didemo.dto&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;com.ustglobal.didemo.dto" name="com.ustglobal.didemo.impl" qualified="false" references="true" stamp="1574743396822" textual="false" version="1.0"/>
+</session>

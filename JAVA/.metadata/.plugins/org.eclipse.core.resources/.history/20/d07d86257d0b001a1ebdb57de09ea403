@@ -1,0 +1,17 @@
+package com.ustglobal.jpawithhibernate;
+
+import com.ustglobal.jpawithhibernate.dto.Product;
+
+public class InsertDemo {
+
+	
+	public static void main(String[] args) {
+		
+		Product product = new Product();
+		product.setPid(101);
+		product.setPname("Pen");
+		product.setQuantity(10);
+		
+		
+	}
+}

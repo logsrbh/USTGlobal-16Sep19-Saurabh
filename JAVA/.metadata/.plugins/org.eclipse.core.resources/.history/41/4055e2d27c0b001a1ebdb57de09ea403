@@ -1,0 +1,11 @@
+package com.ustglobal.jpawithhibernate.dto;
+
+public class InsertDemo {
+
+	
+	public static void main(String[] args) {
+		
+		Product product = new Product();
+		
+	}
+}

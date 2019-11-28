@@ -1,0 +1,9 @@
+package com.ustglobal.beanobject.bean;
+
+public class Database {
+	void receive(Student s) {
+		
+	}
+
+
+}

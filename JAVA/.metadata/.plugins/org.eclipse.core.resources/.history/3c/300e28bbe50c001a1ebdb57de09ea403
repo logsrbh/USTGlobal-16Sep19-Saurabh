@@ -1,0 +1,13 @@
+package com.ustglobal.jpawithhibernate.onetoone;
+
+public class VoterCard {
+	
+	private int vid;
+	
+	private String vname;
+
+	
+	
+	
+
+}

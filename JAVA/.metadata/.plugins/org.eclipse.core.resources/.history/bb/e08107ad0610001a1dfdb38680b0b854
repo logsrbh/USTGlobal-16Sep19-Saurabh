@@ -1,0 +1,5 @@
+package com.ustglobal.didemo.dao;
+
+public interface I {
+
+}

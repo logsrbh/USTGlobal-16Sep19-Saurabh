@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript</title>
+    <script>
+    
+     var age =22;
+     console.log('Age= '+age);
+
+     var name="Dinga";
+     console.log('Name= '+name);
+
+     var hasHobbies= true;
+     console.log('Has Hobbies= '+hasHobbies);
+
+     var married;
+     console.log('Married= '+married);
+
+     var data=null;
+     console.log('Data '+data );
+</script>
+
+    <script src ="date.js">
+  
+  </script>
+</head>
+<body>
+     <script>
+        var fruit=['Orange',"Apple",'PineApple'];
+        console.log('Fruits = ',fruit);
+        console.log('Fruit1= ',fruit[0]);
+        console.log('Fruit Length= '+fruit.length);
+
+        var person={
+                       name:'Alia Bhatt',
+                       lastName:'Ranbir',
+                       age : 25,
+                       phoneno: 9910020030,
+                       getFullName: function(){
+                           return this.name+' '+this.lastName+' '+this.age;
+                       }
+                    }
+             var name= person.name;
+        console.log('Name '+name);
+        console.log(person.lastName);
+        var fullname =person.getFullName();
+        console.log("Full Name :",fullname);
+        console.log("============================================")
+        var a=10;
+        var str='10';
+
+        if(a!==str)
+        { 
+            console.log("Equal");
+        }
+        else{
+            console.log("Not equal");
+        }
+        console.log("====================================");
+       
+        var nammee= "Bhagat Singh";
+        var num= 20;
+
+        console.log(typeof nammee);
+        console.log(typeof num);
+        
+        if(null===undefined)
+        {
+            console.log("Equal");
+        }
+        else
+        {
+            console.log("Not equal");
+        }
+        
+        console.log(typeof null);
+        console.log(typeof undefined);
+        console.log(typeof fullname);
+
+
+
+        </script>
+        
+
+    
+</body>
+</html>

@@ -1,0 +1,14 @@
+package com.ustglobal.didemo.util;
+
+public class DiManager {
+
+	I a = null;
+	
+	public I getI();{
+		if(a==null) {
+			a= new A();
+		}
+		return a;
+	}
+	
+}

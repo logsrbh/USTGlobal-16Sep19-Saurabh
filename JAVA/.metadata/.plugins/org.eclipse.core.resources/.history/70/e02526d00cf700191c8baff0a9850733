@@ -1,0 +1,7 @@
+package com.ustglobal.beanobject.bean;
+
+public class Database {
+	void receive(Student s) {
+		System.out.println("Id id "+s.getId());
+	}
+}

@@ -1,0 +1,7 @@
+package com.ustglobal.springcore.di;
+
+import org.springframework.beans.factory.config.BeanFactoryPostProcessor;
+
+public class BeanFactoryPostProcessorClass implements BeanFactoryPostProcessor {
+
+}

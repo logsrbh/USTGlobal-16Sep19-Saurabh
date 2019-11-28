@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.ustglobal.streams.list.testG&apos; to &apos;TestG&apos;&#x0D;&#x0A;- Original project: &apos;Streams&apos;&#x0D;&#x0A;- Original element: &apos;com.ustglobal.streams.list.testG&apos;&#x0D;&#x0A;- Renamed element: &apos;com.ustglobal.streams.list.TestG&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;testG&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;com.ustglobal.streams.list{testG.java[testG" matchStrategy="1" name="TestG" qualified="false" references="true" similarDeclarations="false" stamp="1572955356903" textual="false" version="1.0"/>
+</session>

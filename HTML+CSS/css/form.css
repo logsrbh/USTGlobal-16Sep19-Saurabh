@@ -1,0 +1,42 @@
+form{
+    border: 10px solid burlywood;
+    width: 260px;
+    height: 250px;
+    margin-top: 130px;
+    margin-left:950px;
+    text-align:center; 
+    color: black;
+    font-size: 15px;
+    font-family:cursive; 
+    border-radius: 20px;
+    background-color:white; 
+    /* //background-image: url(/HTML+CSS/image/giphy.gif);  */
+    background-size:cover;
+     
+    
+}
+body{
+    background-image:url(/HTML+CSS/image/TEUBG066CU.jpg);
+    background-size: cover;
+}
+input[type="text"],input[type="password"]{
+    width: 180px;
+    height: 20px;;
+    border: 2px solid black;
+    border-radius: 25px;
+    outline: none;
+    background-color: burlywood;
+    text-align: center;
+}
+input[type="submit"]{
+    margin-top:8px; 
+    padding:8px 25px;
+    border:2px solid black;
+    border-radius:15px; 
+    background-color:burlywood;  
+    outline: none;
+}
+input[type="submit"]:hover{
+background-color: green;
+background-origin:2px, red;
+}

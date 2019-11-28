@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        
+        //<--------------------CircumFerance of Circle using Named Function ---------------------------------->
+            var pie = 3.14;
+            function circumOfCircle(rad) {
+                console.log("Circumference of Circle is " + 2 * pie * rad);
+            }
+            circumOfCircle(6);
+
+        //<-------------------CircumFerance of Circle using Function Expression --------------------------------->
+            
+            var value = function (rad) {
+                    return 2 * pie * rad;
+                }
+                var circumOfCircle = value(3)
+                console.log(circumOfCircle);
+
+        //<-------------------CircumFerance of Circle using Self Invoked Function --------------------------------->
+            (function (rad) {
+                    console.log(2 * pie * rad);
+                })
+                    (6)
+
+        //<----------------------CircumFerance of Circle using Fat Arrow Function ---------------------------------->
+
+            var circumOfCircle = rad => console.log(2 * pie * rad)
+                circumOfCircle(6);
+
+    </script>
+
+</body>
+
+</html>

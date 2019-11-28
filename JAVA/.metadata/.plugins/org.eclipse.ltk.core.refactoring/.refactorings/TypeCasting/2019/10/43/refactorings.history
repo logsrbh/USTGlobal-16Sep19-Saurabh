@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;com.ustglobal.typecating&apos; to &apos;com.ustglobal.typecating.primitive&apos;&#x0D;&#x0A;- Original project: &apos;TypeCasting&apos;&#x0D;&#x0A;- Original element: &apos;TypeCasting/src/com.ustglobal.typecating&apos;&#x0D;&#x0A;- Renamed element: &apos;TypeCasting/src/com.ustglobal.typecating.primitive&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;com.ustglobal.typecating&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;com.ustglobal.typecating" name="com.ustglobal.typecating.primitive" qualified="false" references="true" stamp="1571910977664" textual="false" version="1.0"/>
+</session>

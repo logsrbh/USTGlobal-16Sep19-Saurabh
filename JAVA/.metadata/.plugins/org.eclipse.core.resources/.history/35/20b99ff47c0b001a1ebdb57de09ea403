@@ -1,0 +1,14 @@
+package com.ustglobal.jpawithhibernate;
+
+import com.ustglobal.jpawithhibernate.dto.Product;
+
+public class InsertDemo {
+
+	
+	public static void main(String[] args) {
+		
+		Product product = new Product();
+		
+		
+	}
+}

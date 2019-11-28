@@ -1,0 +1,5 @@
+package com.ustglobal.jpawithhibernate.dto;
+
+public class Product {
+
+}

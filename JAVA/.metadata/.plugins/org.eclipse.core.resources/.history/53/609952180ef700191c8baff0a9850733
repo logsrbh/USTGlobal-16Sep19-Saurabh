@@ -1,0 +1,5 @@
+package com.ustglobal.beanobject.bean;
+
+public class Employee {
+
+}

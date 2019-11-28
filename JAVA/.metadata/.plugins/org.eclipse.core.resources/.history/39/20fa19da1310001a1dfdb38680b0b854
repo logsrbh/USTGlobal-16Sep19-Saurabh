@@ -1,0 +1,5 @@
+package com.ustglobal.di;
+
+public class Hello {
+
+}

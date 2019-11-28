@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Assignment3B</title>
+</head>
+
+<body>
+    <script>
+
+        //<-----------Addition of Array using Named Function------------------------->
+        function addArray(arr) {
+                var additionOfArray = 0;
+                for (var i in arr) {
+                    additionOfArray += arr[i];
+                }
+                console.log('Addition of Array=', additionOfArray);
+            }
+            var arr = [10, 20, 30, 40, 50];
+            addArray(arr);
+
+        //<---------- Addition of Array using Function Expression-------------------->  
+            var value = function (arr) {
+                var additionOfArray = 0;
+                for (var i in arr) {
+                    additionOfArray += arr[i];
+                }
+                return additionOfArray;
+            }
+            var addValue = value(arr);
+            console.log("Addition of Array using Function Expression is " + addValue);
+
+    //<---------- Addition of Array using Self Invoked Function-------------------->  
+
+            (function (arr) {
+                var additionOfArray = 0;
+                for (var i in arr) {
+                    additionOfArray += arr[i];
+                }
+                console.log("Addition of Array using Self Invoked Function is " + additionOfArray);
+            })
+                (arr);
+
+    //<----------- Addition of Array using Fat Arrow Function-------------------->  
+
+            var addArray = (arr) => {
+                    var sumArray = 0;
+                    for (var i in arr)
+                        sumArray += arr[i];
+
+                    console.log(sumArray);
+                }
+                addArray(arr);
+            
+    </script>
+
+</body>
+
+</html>

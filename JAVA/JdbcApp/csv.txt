@@ -1,0 +1,4 @@
+14,Priya,100000,F
+18,Manish,100000,M
+19,Sardar Khna,100000,M
+20,Kavita,200000,F

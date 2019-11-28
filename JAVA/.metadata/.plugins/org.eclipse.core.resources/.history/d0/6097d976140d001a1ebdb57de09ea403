@@ -1,0 +1,11 @@
+package com.ustglobal.jpawithhibernate.manytomany;
+
+import javax.persistence.Column;
+
+public class Course {
+
+	private int cid;
+	
+
+	private String cname;
+}

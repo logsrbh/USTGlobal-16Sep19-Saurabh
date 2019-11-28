@@ -1,0 +1,29 @@
+package com.ustglobal.jpawithhibernate.onetomanyormanytoone;
+
+public class Pencil {
+	
+	private int pid;
+	
+	private String color;
+
+	public int getPid() {
+		return pid;
+	}
+
+	public void setPid(int pid) {
+		this.pid = pid;
+	}
+
+	public String getColor() {
+		return color;
+	}
+
+	public void setColor(String color) {
+		this.color = color;
+	}
+	
+	
+	
+	
+
+}

@@ -1,0 +1,5 @@
+package com.ustglobal.jpawithhibernate.manytomany;
+
+public class Course {
+
+}

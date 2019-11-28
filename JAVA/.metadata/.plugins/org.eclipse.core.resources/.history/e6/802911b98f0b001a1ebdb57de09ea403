@@ -1,0 +1,17 @@
+package com.ustglobal.jpawithhibernate;
+
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
+
+public class DeleteDemo {
+	
+	public static void main(String[] args) {
+		
+		
+		EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("TestPersistence")
+		
+		
+		
+	}
+
+}
