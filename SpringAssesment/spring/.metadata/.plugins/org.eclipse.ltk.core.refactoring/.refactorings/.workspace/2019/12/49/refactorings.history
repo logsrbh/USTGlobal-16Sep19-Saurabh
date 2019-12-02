@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;rms&apos; to &apos;springmvcproduct&apos;" description="Rename resource &apos;rms&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/rms" name="springmvcproduct" stamp="1575284561709" updateReferences="true"/>
+</session>
