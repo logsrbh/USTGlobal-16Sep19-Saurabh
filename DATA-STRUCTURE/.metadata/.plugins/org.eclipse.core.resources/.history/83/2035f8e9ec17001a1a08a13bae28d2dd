@@ -1,0 +1,18 @@
+package com.ustglobal.dsa.algo;
+
+public class AlgoAnalysis {
+
+	public static void main(String[] args) {
+
+		long number = 9999999l;
+		System.out.println(addUpto(number));
+
+	}
+
+	public static long addUpto(long number) {
+		long total =0l;
+		for(long i =0 ; i<= number ; i++) {
+			total =total+i;
+		}
+	}
+}
