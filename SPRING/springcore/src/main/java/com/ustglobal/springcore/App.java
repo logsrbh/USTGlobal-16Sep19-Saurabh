@@ -33,9 +33,10 @@ public class App
     	
     	Pet pet = context.getBean(Pet.class);
     	System.out.println(pet.getName());
-    	pet.getAnimal().makeSound();
+    	//pet.getAnimal().makeSound();
     	
     
+    	System.out.println(hello.getMap());
     	
     	
     }
