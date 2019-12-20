@@ -1,0 +1,50 @@
+<img src="https://cdn.pixabay.com/photo/2017/08/10/07/20/grocery-store-2619380_1280.jpg" height="1000" width="1550">
+<form action="" class="container" #form="ngForm"(ngSubmit)="modifyProduct(form)" >
+        <!--  -->
+    <h1 class="text-center bg-white text-dark ">Update</h1>
+    <div class="form-group">
+            <input type="text" id="id" name="id" class="form-control" placeholder="Enter User-Id" #id="ngModel"
+                ngModel required>
+            <div *ngIf="id.touched && id.invalid">
+                <p class="alert alert-danger" *ngIf="id.errors.required">This field is required!!!!!!</p>
+            </div>
+        </div>
+    <div class="form-group">
+        <input type="text" id="name" name="name" class="form-control" placeholder="Enter New User Name" #name="ngModel"
+            ngModel required>
+        <div *ngIf="name.touched && name.invalid">
+            <p class="alert alert-danger" *ngIf="name.errors.required">This field is required!!!!!!</p>
+        </div>
+    </div>
+    <div class="form-group">
+        <input type="category" id="category" name="category" class="form-control" placeholder="Enter New category"
+            #category="ngModel" ngModel required>
+        <div *ngIf="category.touched && category.invalid">
+            <p class="alert alert-danger" *ngIf="category.errors.required">This field is required!!!!!!</p>
+        </div>
+    </div>
+        <div class="form-group">
+            <input type="text" id="company" name="company" class="form-control" placeholder="Enter New company"
+                #company="ngModel" ngModel required>
+            <div *ngIf="company.touched && company.invalid">
+                <p class="alert alert-danger" *ngIf="company.errors.required">This field is required!!!!!!</p>
+            </div>
+            </div>
+            <div class="form-group">
+                <input type="number" id="price" name="price" class="form-control" placeholder="Enter New price"
+                    #price="ngModel" ngModel required>
+                <div *ngIf="price.touched && price.invalid">
+                    <p class="alert alert-danger" *ngIf="price.errors.required">This field is required!!!!!!</p>
+                </div>
+            </div>
+                <div class="form-group">
+                    <input type="number" id="quantity" name="quantity" class="form-control" placeholder="Enter New quantity"
+                        #quantity="ngModel" ngModel required>
+                    <div *ngIf="quantity.touched && quantity.invalid">
+                        <p class="alert alert-danger" *ngIf="price.errors.required">This field is required!!!!!!</p>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn-outline-info float-right" [disabled]="form.invalid">Update Product</button>
+                </div>
+</form>

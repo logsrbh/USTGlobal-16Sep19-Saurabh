@@ -1,0 +1,32 @@
+<html>
+<h2 style="text-align: center;">Available Products</h2>
+<input type="search" class="form-control"[(ngModel)]='search' placeholder="Search Product By Name">
+            
+<table class="table  table-bordered  table-dark mt-5 ml-2">
+    <thead class="thread-light">
+        <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Name</th>
+            <th scope="col">Company</th>
+            <th scope="col">Quantity</th>
+            <th scope="col">Price</th>
+            <th scope="col">Quantity</th>
+            <th scope="col">Delete Product</th>
+            <th scope="col">Add to Cart</th>       
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let product of products|search:search">
+            <td>{{product.id}}</td>
+            <td>{{product.name}}</td>
+            <td>{{product.company}}</td>
+            <td>{{product.category}}</td>
+            <td>{{product.price}}</td>
+            <td>{{product.quantity}}</td>
+            <td><button class="btn btn-info" (click)='delete(product)'>Delete</button></td>
+            <td><button class="btn btn-info"(click)='addtocart(product)'>Add to Cart</button></td>
+        </tr>
+    </tbody>
+</table>
+
+</html>

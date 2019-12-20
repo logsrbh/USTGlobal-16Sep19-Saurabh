@@ -1,0 +1,29 @@
+<html>
+<h2 style="text-align: center;">History</h2>
+<table class="table  table-bordered  table-dark mt-5 ml-2">
+    <thead class="thread-light">
+        <tr>
+            <th scope="col">Id</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr *ngFor="let product of products">
+            <td>{{product.id}}</td>
+        </tr>
+    </tbody>
+</table>
+<table class="table  table-bordered  table-dark mt-5 ml-2">
+    <thead class="thread-light">
+        <tr>
+            <th scope="col">OId</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let order of orders|search:search">
+            <td>{{order.oid}}</td>
+        </tr>
+    </tbody>
+</table>
+
+</html>

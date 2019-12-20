@@ -1,0 +1,20 @@
+<html>
+<h2 style="text-align: center;">Admin</h2>
+<table class="table  table-bordered  table-dark mt-5 ml-2">
+    <thead class="thread-light">
+        <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Email</th>
+            <th scope="col">Phone Number</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let book of books">
+            <td>{{book.name}}</td>
+            <td>{{book.email}}</td>
+            <td>{{book.phoneno}}</td>
+        </tr>
+    </tbody>
+</table>
+
+</html>
