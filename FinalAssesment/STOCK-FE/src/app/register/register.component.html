@@ -1,0 +1,23 @@
+<div class="alert alert-danger" *ngIf='error'>{{error}}</div>
+<div class="col-md-4 offset-md-4 mt-5 card">
+    <div class="card-body ">
+        <form #registerForm='ngForm' (ngSubmit)='register(registerForm)'>
+            <h1 class=" text-center bg-dark text-white">Registration</h1>
+
+            <input type="number" name="id" id="id" pattern="[A-Za-z]{3,}" #name='ngModel' ngModel class="form-control mb-3"
+                placeholder="Enter ID" pattern="[A-Za-z]{3,}">
+            <input type="text" name="name" id="name" #name='ngModel' ngModel class="form-control mb-3"
+                placeholder="Enter Name">
+                <div *ngIf="name.touched && name.invalid">
+                    <p class="alert alert-danger" *ngIf="name.errors.required">*This field is required</p>
+                </div>
+                <div *ngIf="name.errors?.pattern && name.touched">
+                    <p class="alert alert-danger">Name should not contain any digits</p>
+                </div>
+            <input type="password" name="password" id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" #password='ngModel' ngModel class="form-control mb-3"
+                placeholder="Enter password">
+
+            <button type="submit" class="float-right btn btn-dark">Register</button>
+        </form>
+    </div>
+</div>

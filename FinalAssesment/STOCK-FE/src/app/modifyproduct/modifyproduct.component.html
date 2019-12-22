@@ -1,0 +1,22 @@
+<div class="alert alert-danger" *ngIf='error'>{{error}}</div>
+<div class="col-md-4 offset-md-4 mt-5 card">
+    <div class="card-body ">
+        <form #modifyForm='ngForm' (ngSubmit)='modifyProduct(modifyForm)'>
+            <h1 class=" text-center bg-dark text-white">Update Product</h1>
+
+            <input type="number" name="id" id="id" #name='ngModel' ngModel class="form-control mb-3"
+                placeholder="Product ID">
+            <input type="text" name="name" id="name" #name='ngModel' ngModel class="form-control mb-3"
+                placeholder="Product Name">
+            <input type="text" name="category" id="category" #name='ngModel' ngModel class="form-control mb-3"
+                placeholder="Category Name">    
+            <input type="text" name="company" id="company" #name='ngModel' ngModel class="form-control mb-3"
+                placeholder="Company Name">
+            <input type="number" name="quantity" id="quantity" #name='ngModel' ngModel class="form-control mb-3"
+                placeholder="Enter Quantity">
+            <input type="number" name="price" id="price" #name='ngModel' ngModel class="form-control mb-3"
+                placeholder="Enter price">
+            <button type="submit" class="float-right btn btn-dark">Update Product</button>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,12 @@
+<div class="alert alert-danger" *ngIf='error'>{{error}}</div>
+<div class="col-md-4 offset-md-4 mt-5 card">
+    <div class="card-body ">
+        <form #productForm='ngForm' (ngSubmit)='getProduct(productForm)'>
+            <h1 class=" text-center bg-dark text-white">Search</h1>
+
+            <input type="text" name="searchbyname" id="searchbyname" [(ngModel)]="searchbyname" ngModel class="form-control mb-3"
+                placeholder="Enter name">
+            <button type="submit" class="float-right btn btn-dark" (click)="getProduct()">Search</button>
+        </form>
+    </div>
+</div>
