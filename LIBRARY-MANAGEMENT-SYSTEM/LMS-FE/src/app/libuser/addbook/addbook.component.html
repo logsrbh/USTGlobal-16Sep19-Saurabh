@@ -1,0 +1,17 @@
+<div class="alert alert-danger" *ngIf='error'>{{error}}</div>
+<div class="col-md-4 offset-md-4 mt-5 card">
+    <div class="card-body ">
+        <form #registerForm='ngForm' (ngSubmit)='addBook(registerForm)'>
+            <h1 class=" text-center bg-dark text-white">Add Book</h1>
+            <!-- <input type="text" name="bid" id="bid" #name='ngModel' ngModel class="form-control mb-3"
+                placeholder="Book ID"> -->
+            <input type="text" name="bname" id="bname" #name='ngModel' ngModel class="form-control mb-3"
+                placeholder="Book Name">
+            <input type="text" name="bauthor" id="bauthor" #name='ngModel' ngModel class="form-control mb-3"
+                placeholder="Author Name">
+            <input type="text" name="publication" id="publication" #name='ngModel' ngModel class="form-control mb-3"
+                placeholder="Enter Publication">
+            <button type="submit" class="float-right btn btn-dark">Add Book</button>
+        </form>
+    </div>
+</div>

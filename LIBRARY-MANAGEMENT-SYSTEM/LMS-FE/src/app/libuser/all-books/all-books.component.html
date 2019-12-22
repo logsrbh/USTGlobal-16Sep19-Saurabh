@@ -1,0 +1,26 @@
+<div class="col-md-6 offset-3 mt-5 card card-body">
+<div *ngIf='book'>
+    <table class="table table-bordered table-hover">
+        <thead class="thead-dark">
+            <tr>
+                <th>Book ID</th>
+                <th>Book Name</th>
+                <th>Book Author</th>
+                <th>Book publication</th>
+                <th>Update Book</th>
+                <th>Delete Request</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor ="let books of book">
+                <td>{{books.bid}}</td>
+                <td>{{books.bname}}</td>
+                <td>{{books.bauthor}}</td>
+                <td>{{books.publication}}</td>
+                <td><button class="btn btn-success"(click)='updateBook(books)'>Update</button></td>
+                <td><button class="btn btn-danger" (click)='deleteBook(books.bid)'>Delete</button></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+</div>

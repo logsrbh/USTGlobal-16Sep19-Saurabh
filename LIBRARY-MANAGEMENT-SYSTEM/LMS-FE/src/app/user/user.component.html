@@ -1,0 +1,33 @@
+<div class="col-md-6 offset-3 mt-5 card">
+    <div class="card-body text-center">
+        <h4 class="card-header bg-dark text-light"> Search Book </h4>
+        <input type="search" name="search" id="search" [(ngModel)]='search'
+            class="form-control col-md-8 offset-md-2 mb-3 mt-5" placeholder="Enter Book id to search">
+        <button class="btn btn-outline-primary float-right" (click)='getBook(search)'>Search</button>
+    </div>
+
+    <div *ngIf='myBook !== null'>
+        <table class="table table-bordered table-hover">
+            <thead class="thead-dark">
+                <tr>
+                    <th>Book ID</th>
+                    <th>Book Name</th>
+                    <th>Book Author</th>
+                    <th>Book publication</th>
+                    <th>Request Book</th>
+                    <th>Cancel Request</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>{{myBook.bid}}</td>
+                    <td>{{myBook.bname}}</td>
+                    <td>{{myBook.bauthor}}</td>
+                    <td>{{myBook.publication}}</td>
+                    <td><button class="btn btn-success">Request Book</button></td>
+                    <td><button class="btn btn-danger">Return Book</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

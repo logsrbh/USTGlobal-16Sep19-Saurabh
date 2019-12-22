@@ -1,0 +1,23 @@
+<div class="alert alert-danger" *ngIf='error'>{{error}}</div>
+<div class="col-md-4 offset-md-4 mt-5">
+    <form #loginForm='ngForm' (ngSubmit)='login(loginForm)'>
+        <div class="card">
+            <div class="card-header bg-dark text-light">
+                <div class="card-title">
+                    <h4>Login</h4>
+                </div>
+            </div>
+            <div class="card-body">
+                <input type="text" name="rollno" id="rollno" placeholder="Roll" #rollno='ngModel' ngModel
+                    class="form-control mb-3">
+                <input type="password" name="password" id="password" placeholder="Password" #password='ngModel'
+                    ngModel class="form-control mb-3">
+            </div>
+            <div class="card-footer">
+                <button class="float-right btn btn-dark" type="submit">
+                    Login
+                </button>
+            </div>
+        </div>
+    </form>
+</div>

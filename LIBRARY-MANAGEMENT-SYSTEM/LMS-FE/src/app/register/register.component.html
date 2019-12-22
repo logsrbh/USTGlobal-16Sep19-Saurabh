@@ -1,0 +1,19 @@
+<div class="alert alert-danger" *ngIf='error'>{{error}}</div>
+<div class="col-md-4 offset-md-4 mt-5 card">
+    <div class="card-body ">
+        <form #registerForm='ngForm' (ngSubmit)='register(registerForm)'>
+                <h1 class=" text-center bg-dark text-white">Registration</h1>
+            <input type="text" name="rollno" id="rollno" #name='ngModel' ngModel
+            class="form-control mb-3" placeholder="Enter Your Roll">
+            <input type="text" name="name" id="name" #name='ngModel' ngModel
+            class="form-control mb-3" placeholder="Enter Name">
+            <input type="password" name="password" id="password" #password='ngModel' ngModel
+             class="form-control mb-3" placeholder="Enter password">
+             <input type="text" name="department" id="department" #name='ngModel' ngModel
+             class="form-control mb-3" placeholder="Department">
+            <input type="text" name="gender" id="gender" #gender='ngModel' ngModel
+             class="form-control mb-3" placeholder="Gender">
+            <button type="submit" class="float-right btn btn-dark">Register</button>
+        </form>
+    </div>
+</div>
